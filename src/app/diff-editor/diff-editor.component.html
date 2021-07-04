@@ -1,0 +1,32 @@
+<div fxLayout="column">
+
+  <mat-card fxLayout="row">
+    <div fxFlex="30" fxLayout="column" class="form-infos">
+      <h4 class="mat-title">Form control</h4>
+      <div class="form-info">
+        <span>Valid:</span>
+        
+      </div>
+      <div class="form-info">
+        <span>Dirty:</span>
+        
+      </div>
+      <div class="form-info">
+        <span>Touched:</span>
+        
+      </div>
+      <div class="form-info">
+        <span>Value</span>
+        
+      </div>
+      <div class="form-info">
+        <span>Errors</span>
+       
+      </div>
+    </div>
+    <form fxFlex>
+      <ngx-monaco-diff-editor [options]="mergeOptions({ language:'json' })" [original]="this.originalCode" [modified]="this.code">
+      </ngx-monaco-diff-editor>
+    </form>
+  </mat-card>
+</div>
